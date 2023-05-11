@@ -10,7 +10,7 @@ from ..services.order_service import *
 # Create your views here.
 
 @api_view(['GET', 'DELETE'])
-def get_order(request, order_id):
+def order_noparam(request, order_id):
     if request.method == 'GET':
         return get_order(order_id)
     elif request.method == 'DELETE':
