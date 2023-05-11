@@ -1,7 +1,7 @@
 from django.urls import path
-from ..views.order_view import order, get_order
+from ..views.order_view import order, order_noparam
 
 urlpatterns = [
-    path('<int:order_id>', get_order),
+    path('<int:order_id>', order_noparam),
     path('', order),
 ]
